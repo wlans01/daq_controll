@@ -160,17 +160,17 @@ def test(daq : DAQControl):
 if __name__ == '__main__':
     
     daq = DAQControl('Dev1')
-    # daq.self_diagnostics()
-    # daq.add_input_channel('ai0')
-    # daq.add_input_channel('ai1')
-    # daq.add_output_channel('ao0')
-    # daq.add_output_channel('ao1')
+    daq.self_diagnostics()
+    daq.add_input_channel('ai0')
+    daq.add_input_channel('ai1')
+    daq.add_output_channel('ao0')
+    daq.add_output_channel('ao1')
     
-    # daq.devide_info()
-    # daq.write([0,0])
-    # data = daq.read()
-    # print(data)
+    daq.devide_info()
+    daq.write([0,0])
+    data = daq.read()
+    print(data)
+    daq.close()
 
-
-    # daq.close()
-    test(daq)
+    
+    # test(daq)
